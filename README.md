@@ -1,15 +1,16 @@
 # CodePen experiments
 
-```
-npm create astro@latest -- --template minimal
-```
-
 ## Pens
 
-| Name           | Description                                      | Links                                                        |
-| :------------- | :----------------------------------------------- | :----------------------------------------------------------- |
-| FeverShape 001 | Animated SVG illustration with geometric designs | [Link](https://codepen.io/juan-antonio-ledesma/full/abaLebM) |
-| FeverShape 002 | Animated SVG illustration with geometric designs | [Link](https://codepen.io/juan-antonio-ledesma/full/jOvYddo) |
+### FeverShape 001
+
+Animated SVG illustration with geometric designs<br>
+[Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaLebM) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaLebM)
+
+### FeverShape 002
+
+Animated SVG illustration with geometric designs<br>
+[Full Page View](https://codepen.io/juan-antonio-ledesma/full/jOvYddo) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/jOvYddo)
 
 ## Astro Commands
 
