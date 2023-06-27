@@ -1,0 +1,80 @@
+:root {
+  --stroke-width: 2px;
+  --background-color: #111;
+  --background-grid-color: rgba(7, 255, 164, 0.1);
+  --primary-color: #07ffa4;
+  --animation-duration: 3s;
+}
+
+body {
+  margin: 0;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  background-image: linear-gradient(var(--background-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--background-grid-color) 1px, transparent 1px);
+  background-size: 5px 5px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: monospace;
+}
+
+circle,
+line,
+path,
+polygon,
+polyline,
+rect {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: var(--stroke-width);
+  filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.illustration-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
+.illustration-title {
+  margin: 16px 0 0;
+  text-align: center;
+  text-shadow: 0 0 10px var(--primary-color);
+  user-select: none;
+}
+
+.illustration-halfCircle {
+  fill: var(--primary-color);
+  stroke: none;
+  opacity: 0.3;
+}
+
+@keyframes mark-step {
+  0% {
+    stroke-width: var(--stroke-width);
+  }
+  25% {
+    stroke-width: 16px;
+  }
+  50% {
+    stroke-width: var(--stroke-width);
+  }
+}
+.illustration-step {
+  stroke-width: var(--stroke-width);
+  animation: mark-step var(--animation-duration) ease infinite;
+}
+.illustration-step:nth-of-type(1) {
+  animation-delay: calc(var(--animation-duration) * 0.25);
+}
+.illustration-step:nth-of-type(2) {
+  animation-delay: calc(var(--animation-duration) * 0.5);
+}
+.illustration-step:nth-of-type(3) {
+  animation-delay: calc(var(--animation-duration) * 0.75);
+}
+.illustration-step:nth-of-type(4) {
+  animation-delay: var(--animation-duration);
+}
