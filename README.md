@@ -1,5 +1,7 @@
 # CodePen experiments
 
+This repository is a collection of CodePen experiments that I have developed with the aim of exploring, innovating, and pushing the boundaries of digital creativity.
+
 ## Pens
 
 - **FeverShape 001**<br>
@@ -14,7 +16,7 @@
   Animated SVG illustration with geometric designs<br>
   [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaErRN) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaErRN)
 
-## Astro Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
