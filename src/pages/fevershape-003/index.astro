@@ -1,54 +1,50 @@
 ---
+import PageLayout from '../../layouts/PageLayout.astro'
 import './style.css'
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>FeverShape 003</title>
-    <meta content="Animated SVG illustration with geometric designs" name="description" />
-  </head>
-  <body>
-    <div class="illustration-wrapper">
-      <p class="illustration-title">¯\_(ツ)_/¯</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="illustration">
-        <path
-          class="illustration-peak"
-          d="M427.2,117.39A56,56,0,0,1,350,96.07l3.12-1.7L399.49,69l25.59,44.69Z"></path>
+<PageLayout
+  metaTitle="FeverShape 003"
+  metaDescription="Animated SVG illustration with geometric designs"
+>
+  <div class="illustration-wrapper">
+    <p class="illustration-title">¯\_(ツ)_/¯</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="illustration">
+      <path
+        class="illustration-peak"
+        d="M427.2,117.39A56,56,0,0,1,350,96.07l3.12-1.7L399.49,69l25.59,44.69Z"></path>
 
-        <line class="illustration-drip" x1="398.49" y1="472" x2="398.49" y2="385"></line>
-        <line class="illustration-drip" x1="426.49" y1="531" x2="426.49" y2="357"></line>
-        <line class="illustration-drip" x1="453.49" y1="497" x2="453.49" y2="323"></line>
+      <line class="illustration-drip" x1="398.49" y1="472" x2="398.49" y2="385"></line>
+      <line class="illustration-drip" x1="426.49" y1="531" x2="426.49" y2="357"></line>
+      <line class="illustration-drip" x1="453.49" y1="497" x2="453.49" y2="323"></line>
 
-        <path d="M158.07,488.07C360.14,469.16,517.49,314,517.49,125"></path>
-        <path d="M431.49,125.51V125"></path>
-        <line x1="474.49" y1="200" x2="118.49" y2="488.38"></line>
-        <line x1="118.47" y1="488.4" x2="118.17" y2="488.64"></line>
-        <line x1="116.49" y1="446.49" x2="116.49" y2="370"></line>
-        <line x1="220.4" y1="370" x2="116.49" y2="370"></line>
-        <path d="M116.49,370.23A116.15,116.15,0,0,1,95.17,235.41l83.36,13.2,13.17,83.13"></path>
-        <line x1="191.54" y1="332.06" x2="117.09" y2="370"></line>
-        <line x1="342.33" y1="228.51" x2="220.45" y2="369.95"></line>
-        <polyline points="118.17 488.64 136.9 466.9 220.4 370"></polyline>
-        <line x1="431.49" y1="125" x2="398.46" y2="163.34"></line>
-        <polyline points="399.49 69 425.08 113.69 428.32 119.34 474.49 200"></polyline>
-        <line x1="474.49" y1="200" x2="517.49" y2="125"></line>
-        <line x1="431.49" y1="125" x2="517.49" y2="125"></line>
-        <polyline points="399.49 69 358.57 102.33 354.52 105.63 244.59 195.17"></polyline>
-        <line x1="202.73" y1="229.25" x2="178.58" y2="248.93"></line>
-        <polyline points="399.49 69 366.85 110.27 363.51 114.49 191.49 332"></polyline>
-        <line x1="220.45" y1="369.95" x2="191.49" y2="332"></line>
-        <circle cx="223.49" cy="212" r="27"></circle>
-        <circle cx="370.49" cy="196" r="43"></circle>
-        <line x1="196.49" y1="212" x2="196.49" y2="180"></line>
-        <line x1="250.49" y1="257.4" x2="250.49" y2="212"></line>
-        <line x1="426.35" y1="239" x2="370.49" y2="239"></line>
-        <line x1="370.49" y1="153" x2="333.06" y2="153"></line>
-        <polyline points="95.17 235.41 348.59 96.83 353.09 94.37 399.49 69"></polyline>
-        <line x1="158.07" y1="488.07" x2="140.53" y2="470.53"></line>
-        <line x1="136.9" y1="466.9" x2="116.49" y2="446.49"></line>
-      </svg>
-    </div>
-  </body>
-</html>
+      <path d="M158.07,488.07C360.14,469.16,517.49,314,517.49,125"></path>
+      <path d="M431.49,125.51V125"></path>
+      <line x1="474.49" y1="200" x2="118.49" y2="488.38"></line>
+      <line x1="118.47" y1="488.4" x2="118.17" y2="488.64"></line>
+      <line x1="116.49" y1="446.49" x2="116.49" y2="370"></line>
+      <line x1="220.4" y1="370" x2="116.49" y2="370"></line>
+      <path d="M116.49,370.23A116.15,116.15,0,0,1,95.17,235.41l83.36,13.2,13.17,83.13"></path>
+      <line x1="191.54" y1="332.06" x2="117.09" y2="370"></line>
+      <line x1="342.33" y1="228.51" x2="220.45" y2="369.95"></line>
+      <polyline points="118.17 488.64 136.9 466.9 220.4 370"></polyline>
+      <line x1="431.49" y1="125" x2="398.46" y2="163.34"></line>
+      <polyline points="399.49 69 425.08 113.69 428.32 119.34 474.49 200"></polyline>
+      <line x1="474.49" y1="200" x2="517.49" y2="125"></line>
+      <line x1="431.49" y1="125" x2="517.49" y2="125"></line>
+      <polyline points="399.49 69 358.57 102.33 354.52 105.63 244.59 195.17"></polyline>
+      <line x1="202.73" y1="229.25" x2="178.58" y2="248.93"></line>
+      <polyline points="399.49 69 366.85 110.27 363.51 114.49 191.49 332"></polyline>
+      <line x1="220.45" y1="369.95" x2="191.49" y2="332"></line>
+      <circle cx="223.49" cy="212" r="27"></circle>
+      <circle cx="370.49" cy="196" r="43"></circle>
+      <line x1="196.49" y1="212" x2="196.49" y2="180"></line>
+      <line x1="250.49" y1="257.4" x2="250.49" y2="212"></line>
+      <line x1="426.35" y1="239" x2="370.49" y2="239"></line>
+      <line x1="370.49" y1="153" x2="333.06" y2="153"></line>
+      <polyline points="95.17 235.41 348.59 96.83 353.09 94.37 399.49 69"></polyline>
+      <line x1="158.07" y1="488.07" x2="140.53" y2="470.53"></line>
+      <line x1="136.9" y1="466.9" x2="116.49" y2="446.49"></line>
+    </svg>
+  </div>
+</PageLayout>
