@@ -1,23 +1,28 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro'
+import { pens } from '../data/pages'
+import './style.css'
 ---
 
 <PageLayout
-  metaTitle="CodePen experiments"
+  metaTitle="CodePen Experiments"
   metaDescription="Animated SVG illustration with geometric designs"
 >
-  <h1>CodePen experiments</h1>
+  <h1>🧪 <br />CodePen Experiments</h1>
+
   <nav>
     <ul>
-      <li>
-        <a href="./fevershape-001">FeverShape 001</a>
-      </li>
-      <li>
-        <a href="./fevershape-002">FeverShape 002</a>
-      </li>
-      <li>
-        <a href="./fevershape-003">FeverShape 003</a>
-      </li>
+      {
+        pens.map(pen => (
+          <li class="pen">
+            <h2 class="pen-title">{pen.title}</h2>
+            <p class="pen-description">{pen.description}</p>
+            <a class="pen-link" href={pen.url}>
+              SHOW
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </nav>
 </PageLayout>

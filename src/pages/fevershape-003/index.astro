@@ -1,12 +1,10 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro'
+import { feverShape003 } from '../../data/pages'
 import './style.css'
 ---
 
-<PageLayout
-  metaTitle="FeverShape 003"
-  metaDescription="Animated SVG illustration with geometric designs"
->
+<PageLayout metaTitle={feverShape003.title} metaDescription={feverShape003.description}>
   <div class="illustration-wrapper">
     <p class="illustration-title">¯\_(ツ)_/¯</p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="illustration">

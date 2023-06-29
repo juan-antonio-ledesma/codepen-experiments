@@ -1,4 +1,4 @@
-# CodePen experiments
+# CodePen Experiments
 
 This repository is a collection of CodePen experiments that I have developed with the aim of exploring, innovating, and pushing the boundaries of digital creativity.
 
