@@ -1,3 +1,8 @@
+export const cellRest = {
+  title: 'Cell Rest',
+  description: 'SVG morph animation',
+  url: './cell-rest',
+}
 export const feverShape001 = {
   title: 'FeverShape 001',
   description: 'Animated SVG illustration with geometric designs',
@@ -14,4 +19,4 @@ export const feverShape003 = {
   url: './fevershape-003',
 }
 
-export const pens = [feverShape001, feverShape002, feverShape003]
+export const pens = [cellRest, feverShape001, feverShape002, feverShape003]
