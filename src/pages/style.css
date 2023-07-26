@@ -1,7 +1,9 @@
 :root {
+  --background-color: #f3f6f9;
   --primary-color: #333;
-  --primary-light-color: rgba(51, 51, 51, 0.85);
-  --primary-lightest-color: rgba(51, 51, 51, 0.3);
+  --link-color: #1976d2;
+  --link-color-semi-transparent: rgba(25, 118, 210, 0.5);
+  --link-background-color-hover: rgba(25, 118, 210, 0.04);
   --white: #fff;
 }
 
@@ -12,22 +14,14 @@
 body {
   font-family: monospace;
   color: var(--primary-color);
+  background-color: var(--background-color);
+  padding: 16px;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
   font-size: 40px;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-  padding-inline-start: 0;
 }
 
 .emoji {
@@ -36,40 +30,68 @@ ul {
   max-width: 60px;
 }
 
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding-inline-start: 0;
+  padding-bottom: 16px;
+}
+
 .pen {
   width: 100%;
   padding: 16px;
-  border: solid 1px var(--primary-lightest-color);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-color: var(--white);
 }
 
 .pen-title {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0;
 }
 
 .pen-description {
   font-size: 14px;
   margin: 4px 0 0;
+  line-height: 1.43;
+  margin-bottom: 16px;
 }
 
 .pen-link {
   text-decoration: none;
-  display: block;
   align-self: flex-end;
   display: grid;
   place-items: center;
-  background: var(--primary-color);
-  color: var(--white);
-  height: 32px;
+  height: 36px;
+  min-width: 64px;
   padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   border-radius: 4px;
-  margin-top: 16px;
+  margin-top: auto;
+  transition: 300ms;
+  border: 1px solid var(--link-color-semi-transparent);
+  color: var(--link-color);
 }
 
 .pen-link:hover {
-  background: var(--primary-light-color);
+  background-color: var(--link-background-color-hover);
+  border: 1px solid var(--link-color);
+}
+
+@media (min-width: 600px) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
