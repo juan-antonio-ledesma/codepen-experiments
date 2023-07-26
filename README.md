@@ -4,6 +4,10 @@ This repository is a collection of CodePen experiments that I have developed wit
 
 ## Pens
 
+- **Cell Rest**<br>
+  SVG morph animation<br>
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/rNQqMpq) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/rNQqMpq)
+
 - **FeverShape 001**<br>
   Animated SVG illustration with geometric designs<br>
   [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaLebM) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaLebM)
