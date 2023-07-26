@@ -30,6 +30,12 @@ ul {
   padding-inline-start: 0;
 }
 
+.emoji {
+  height: auto;
+  width: 100%;
+  max-width: 60px;
+}
+
 .pen {
   width: 100%;
   padding: 16px;
