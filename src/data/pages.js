@@ -1,3 +1,9 @@
+export const behindBars = {
+  title: 'Behind Bars',
+  description:
+    'A visual composition with bars and animated circles on a circular canvas, created solely with HTML and CSS',
+  url: './behind-bars',
+}
 export const cellRest = {
   title: 'Cell Rest',
   description: 'SVG morph animation',
@@ -19,4 +25,4 @@ export const feverShape003 = {
   url: './fevershape-003',
 }
 
-export const pens = [cellRest, feverShape001, feverShape002, feverShape003]
+export const pens = [behindBars, cellRest, feverShape001, feverShape002, feverShape003]

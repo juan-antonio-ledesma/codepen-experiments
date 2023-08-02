@@ -4,6 +4,10 @@ This repository is a collection of CodePen experiments that I have developed wit
 
 ## Pens
 
+- **Behind Bars**<br>
+  A visual composition with bars and animated circles on a circular canvas, created solely with HTML and CSS<br>
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/JjeVbbv) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/JjeVbbv)
+
 - **Cell Rest**<br>
   SVG morph animation<br>
   [Full Page View](https://codepen.io/juan-antonio-ledesma/full/rNQqMpq) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/rNQqMpq)
