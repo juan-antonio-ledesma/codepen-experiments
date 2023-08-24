@@ -2,6 +2,24 @@
 
 This repository is a collection of CodePen experiments that I have developed with the aim of exploring, innovating, and pushing the boundaries of digital creativity.
 
+<table>
+  <thead>
+    <tr>
+      <th align="left">Table of contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>
+          <a href="#pens">Pens</a><br />
+          <a href="#astro-commands">Astro commands</a>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Pens
 
 - **Behind Bars**<br>
@@ -24,7 +42,7 @@ This repository is a collection of CodePen experiments that I have developed wit
   Animated SVG illustration with geometric designs<br>
   [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaErRN) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaErRN)
 
-## Commands
+## Astro commands
 
 All commands are run from the root of the project, from a terminal:
 
