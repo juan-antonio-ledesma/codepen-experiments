@@ -1,6 +1,7 @@
 :root {
   --background-color: #f3f6f9;
   --primary-color: #333;
+  --tag-background: rgba(0, 0, 0, 0.08);
   --link-color: #1976d2;
   --link-color-semi-transparent: rgba(25, 118, 210, 0.5);
   --link-background-color-hover: rgba(25, 118, 210, 0.04);
@@ -67,6 +68,23 @@ ul {
   margin-bottom: 16px;
 }
 
+.pen-tags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pen-tag {
+  padding: 0 8px;
+  background-color: var(--tag-background);
+  font-size: 13px;
+  display: grid;
+  place-items: center;
+  height: 24px;
+  border-radius: 16px;
+}
+
 .pen-link {
   text-decoration: none;
   align-self: flex-end;
@@ -79,7 +97,7 @@ ul {
   font-weight: 700;
   letter-spacing: 0.5px;
   border-radius: 4px;
-  margin-top: auto;
+  margin-top: 24px;
   transition: 300ms;
   border: 1px solid var(--link-color-semi-transparent);
   color: var(--link-color);

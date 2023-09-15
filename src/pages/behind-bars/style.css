@@ -3,6 +3,7 @@
   --main-color: #fbe8d3;
   --cicle-color: #f85f73;
   --canvas-size: 68vmin;
+  --canvas-max-size: 500px;
   --bar-width: 1vmin;
   --animation-duration: 6s;
 }
@@ -30,6 +31,8 @@ body {
 .canvas {
   width: var(--canvas-size);
   height: var(--canvas-size);
+  max-width: var(--canvas-max-size);
+  max-height: var(--canvas-max-size);
   display: flex;
   justify-content: space-between;
   position: relative;

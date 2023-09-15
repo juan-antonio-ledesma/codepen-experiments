@@ -22,6 +22,10 @@ This repository is a collection of CodePen experiments that I have developed wit
 
 ## Pens
 
+- **Energy Pyramid**<br>
+  A visual composition animated, created solely with HTML and CSS<br>
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/bGOadXb) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/bGOadXb)
+
 - **Behind Bars**<br>
   A visual composition with bars and animated circles on a circular canvas, created solely with HTML and CSS<br>
   [Full Page View](https://codepen.io/juan-antonio-ledesma/full/JjeVbbv) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/JjeVbbv)

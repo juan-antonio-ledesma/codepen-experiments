@@ -20,6 +20,11 @@ import './style.css'
           <li class="pen">
             <h2 class="pen-title">{pen.title}</h2>
             <p class="pen-description">{pen.description}</p>
+            <div class="pen-tags">
+              {pen.tags.map(tag => (
+                <span class="pen-tag">{tag}</span>
+              ))}
+            </div>
             <a class="pen-link" href={pen.url}>
               SHOW
             </a>
