@@ -23,28 +23,29 @@ This repository is a collection of CodePen experiments that I have developed wit
 ## Pens
 
 - **Energy Pyramid**<br>
+  <sup>`css` `css-animation` `pure-css` `energy` `pyramid`</sup><br>
   A visual composition animated, created solely with HTML and CSS<br>
-  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/bGOadXb) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/bGOadXb)
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/bGOadXb) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/bGOadXb)
 
-- **Behind Bars**<br>
+- **Behind Bars**<br><sup>`css` `css-animation` `pure-css` `behind` `bars`</sup><br>
   A visual composition with bars and animated circles on a circular canvas, created solely with HTML and CSS<br>
-  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/JjeVbbv) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/JjeVbbv)
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/JjeVbbv) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/JjeVbbv)
 
-- **Cell Rest**<br>
+- **Cell Rest**<br><sup>`svg` `morph` `css-animation` `css-morph` `gradient-animation`</sup><br>
   SVG morph animation<br>
-  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/rNQqMpq) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/rNQqMpq)
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/rNQqMpq) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/rNQqMpq)
 
-- **FeverShape 001**<br>
+- **FeverShape 001**<br><sup>`svg` `svg-animation` `css` `css-animation` `illustration`</sup><br>
   Animated SVG illustration with geometric designs<br>
-  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaLebM) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaLebM)
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaLebM) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaLebM)
 
-- **FeverShape 002**<br>
+- **FeverShape 002**<br><sup>`svg` `svg-animation` `css` `css-animation` `illustration`</sup><br>
   Animated SVG illustration with geometric designs<br>
-  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/jOvYddo) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/jOvYddo)
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/jOvYddo) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/jOvYddo)
 
-- **FeverShape 003**<br>
+- **FeverShape 003**<br><sup>`svg` `svg-animation` `css` `css-animation` `illustration`</sup><br>
   Animated SVG illustration with geometric designs<br>
-  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaErRN) - [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaErRN)
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/abaErRN) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/abaErRN)
 
 ## Astro commands
 
