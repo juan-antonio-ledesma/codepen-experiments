@@ -1,3 +1,9 @@
+export const meetingPoint = {
+  title: 'Meeting Point',
+  description: 'A visual composition with animated circles, created with HTML and CSS',
+  url: './meeting-point',
+  tags: ['css', 'css-animation', 'pure-css', 'meeting', 'point'],
+}
 export const energyPyramid = {
   title: 'Energy Pyramid',
   description: 'A visual composition animated, created solely with HTML and CSS',
@@ -37,6 +43,7 @@ export const feverShape003 = {
 }
 
 export const pens = [
+  meetingPoint,
   energyPyramid,
   behindBars,
   cellRest,

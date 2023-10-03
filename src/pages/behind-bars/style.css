@@ -1,7 +1,7 @@
 :root {
   --background-color: #1a1b30;
   --main-color: #fbe8d3;
-  --cicle-color: #f85f73;
+  --circle-color: #f85f73;
   --canvas-size: 68vmin;
   --canvas-max-size: 500px;
   --bar-width: 1vmin;
@@ -66,8 +66,8 @@ body {
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  background: var(--cicle-color);
-  box-shadow: 0 0 20px var(--cicle-color);
+  background: var(--circle-color);
+  box-shadow: 0 0 20px var(--circle-color);
 }
 @keyframes circle-first {
   0%,

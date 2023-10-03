@@ -22,6 +22,11 @@ This repository is a collection of CodePen experiments that I have developed wit
 
 ## Pens
 
+- **Meeting Point**<br>
+  <sup>`css` `css-animation` `pure-css` `meeting` `point`</sup><br>
+  A visual composition animated, created solely with HTML and CSS<br>
+  [Full Page View](https://codepen.io/juan-antonio-ledesma/full/MWZNvwM) — [Editor View](https://codepen.io/juan-antonio-ledesma/pen/MWZNvwM)
+
 - **Energy Pyramid**<br>
   <sup>`css` `css-animation` `pure-css` `energy` `pyramid`</sup><br>
   A visual composition animated, created solely with HTML and CSS<br>

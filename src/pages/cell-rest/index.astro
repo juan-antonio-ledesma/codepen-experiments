@@ -2,6 +2,8 @@
 import PageLayout from '../../layouts/PageLayout.astro'
 import { cellRest } from '../../data/pages'
 import './style.css'
+
+const { title, description } = cellRest
 ---
 
 <script>
@@ -27,7 +29,7 @@ import './style.css'
   endGradientAnimation.setAttribute('dur', animationDurationGradient)
 </script>
 
-<PageLayout metaTitle={cellRest.title} metaDescription={cellRest.description}>
+<PageLayout metaTitle={title} metaDescription={description}>
   <div class="cell-wrapper">
     <div class="cell-core"></div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" class="cell">
