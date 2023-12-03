@@ -42,10 +42,10 @@ body {
   position: absolute;
   background: linear-gradient(transparent, var(--main-color), transparent);
   filter: blur(2px);
-  animation: deatail-animation var(--animation-duration) linear infinite;
+  animation: detail-animation var(--animation-duration) linear infinite;
 }
 
-@keyframes deatail-animation {
+@keyframes detail-animation {
   0% {
     transform: translateY(2000%);
   }
