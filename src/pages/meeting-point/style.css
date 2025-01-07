@@ -7,13 +7,28 @@
   --canvas-max-size: 500px;
 
   --circle-size: 8vmin;
+  --circle-max-size: 64px;
 
   --corner-size-large: 20vmin;
+  --corner-max-size-large: 160px;
   --corner-size-medium: 16vmin;
+  --corner-max-size-medium: 128px;
   --corner-size-small: 12vmin;
+  --corner-max-size-small: 96px;
 
-  --corner-side-size-width: 1.5vmin;
-  --corner-side-size-height: 1.5vmin;
+  --corner-side-size: 1.5vmin;
+  --corner-side-max-size: 12px;
+
+  --corner-postition-medium: 4vmin;
+  --corner-max-position-medium: 32px;
+  --corner-postition-small: 8vmin;
+  --corner-max-position-small: 64px;
+
+  --meeting-point-size: 12vmin;
+  --meetin-point-max-size: 96px;
+
+  --meeting-point-side-size: 1.5vmin;
+  --meeting-point-side-max-size: 12px;
 
   --animation-duration: 3000ms;
 }
@@ -88,21 +103,27 @@ body {
 .corner.is-large {
   width: var(--corner-size-large);
   height: var(--corner-size-large);
+  max-width: var(--corner-max-size-large);
+  max-height: var(--corner-max-size-large);
   bottom: 0;
   right: 0;
 }
 .corner.is-medium {
   width: var(--corner-size-medium);
   height: var(--corner-size-medium);
+  max-width: var(--corner-max-size-medium);
+  max-height: var(--corner-max-size-medium);
   opacity: 0.35;
-  bottom: 4vmin;
-  right: 4vmin;
+  bottom: calc(min(var(--corner-postition-medium), var(--corner-max-position-medium)));
+  right: calc(min(var(--corner-postition-medium), var(--corner-max-position-medium)));
 }
 .corner.is-small {
   width: var(--corner-size-small);
   height: var(--corner-size-small);
-  bottom: 8vmin;
-  right: 8vmin;
+  max-width: var(--corner-max-size-small);
+  max-height: var(--corner-max-size-small);
+  bottom: calc(min(var(--corner-postition-small), var(--corner-max-position-small)));
+  right: calc(min(var(--corner-postition-small), var(--corner-max-position-small)));
 }
 .corner::before,
 .corner::after {
@@ -110,14 +131,16 @@ body {
   position: absolute;
 }
 .corner::before {
-  width: var(--corner-side-size-width);
+  width: var(--corner-side-size);
+  max-width: var(--corner-side-max-size);
   height: 100%;
   right: 0;
   background: linear-gradient(transparent, var(--main-color) 50%);
 }
 .corner::after {
   width: 100%;
-  height: var(--corner-side-size-height);
+  height: var(--corner-side-size);
+  max-height: var(--corner-side-max-size);
   bottom: 0;
   background: linear-gradient(90deg, transparent, var(--main-color) 50%);
 }
@@ -126,6 +149,8 @@ body {
   position: absolute;
   width: var(--circle-size);
   height: var(--circle-size);
+  max-width: var(--circle-max-size);
+  max-height: var(--circle-max-size);
   background-color: var(--main-color);
   border-radius: 50%;
   box-shadow: 0 0 20px var(--main-color);
@@ -151,8 +176,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, -50%);
     opacity: 0;
   }
@@ -168,7 +193,7 @@ body {
   0%,
   100% {
     top: calc(-1 * var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, -80%);
   }
   20% {
@@ -184,8 +209,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, -50%);
     opacity: 0;
   }
@@ -218,8 +243,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    top: calc(50% - var(--circle-size) / 2);
-    right: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    right: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(50%, -50%);
     opacity: 0;
   }
@@ -234,7 +259,7 @@ body {
 @keyframes move-circle-fourth {
   0%,
   100% {
-    top: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     left: calc(-1 * var(--circle-size) / 2);
     transform: scale(0) translate(-80%, -50%);
   }
@@ -251,8 +276,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, -50%);
     opacity: 0;
   }
@@ -268,7 +293,7 @@ body {
 @keyframes move-circle-fifth {
   0%,
   100% {
-    top: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     right: calc(-1 * var(--circle-size) / 2);
     transform: scale(0) translate(80%, -50%);
   }
@@ -285,8 +310,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    top: calc(50% - var(--circle-size) / 2);
-    right: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    right: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(50%, -50%);
     opacity: 0;
   }
@@ -319,8 +344,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    bottom: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    bottom: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, 50%);
     opacity: 0;
   }
@@ -336,7 +361,7 @@ body {
   0%,
   100% {
     bottom: calc(-1 * var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, 80%);
   }
   20% {
@@ -352,8 +377,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    bottom: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    bottom: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    left: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(-50%, 50%);
     opacity: 0;
   }
@@ -386,8 +411,8 @@ body {
     opacity: 0.75;
   }
   95% {
-    bottom: calc(50% - var(--circle-size) / 2);
-    right: calc(50% - var(--circle-size) / 2);
+    bottom: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
+    right: calc(50% - min(var(--circle-size), var(--circle-max-size)) / 2);
     transform: scale(0) translate(50%, 50%);
     opacity: 0;
   }
@@ -400,10 +425,14 @@ body {
 }
 
 .meetingPoint {
-  width: 12vmin;
-  height: 12vmin;
+  width: var(--meeting-point-size);
+  height: var(--meeting-point-size);
+  max-width: var(--meetin-point-max-size);
+  max-height: var(--meetin-point-max-size);
   border-radius: 50%;
-  border: solid 1.5vmin var(--meeting-point-color);
+  border-style: solid;
+  border-color: var(--meeting-point-color);
+  border-width: calc(min(var(--meeting-point-side-size), var(--meeting-point-side-max-size)));
   filter: drop-shadow(0 0 30px var(--main-color));
   mix-blend-mode: plus-lighter;
   position: absolute;
